@@ -1,0 +1,69 @@
+/* 전체 컨테이너 스타일 */
+div {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* 텍스트 문단 스타일 */
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 사진 그리드 스타일 */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 가로로 5개의 열로 설정 */
+  gap: 20px;
+}
+
+/* 사진 카드 스타일 */
+.photo-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.photo-card.active {
+  background-color: azure;
+  transform: scale(1.05);
+}
+
+/* 이미지 스타일 */
+.photo-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* 사진 카드 콘텐츠 스타일 */
+.photo-card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+/* 제목 스타일 */
+.photo-card-content h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #555;
+}
+
+/* 날짜와 위치 정보 스타일 */
+.photo-card-content div {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* 태그 스타일 */
+.photo-card-content p {
+  font-size: 14px;
+  color: #888;
+}
